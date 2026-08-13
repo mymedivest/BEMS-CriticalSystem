@@ -130,7 +130,7 @@ const criticalSystems = [
     { name: "Water Purifier", id: "Water Purifier"},
     { name: "Radiotherapy", id: "Radiotherapy"},
     { name: "Brachytherapy", id: "Brachytherapy" },
-    { name: "Others", id: "Others" }
+  //  { name: "Others", id: "Others" }
 ];
 
 //---------------------------------link submission form--------------------------------------------------
