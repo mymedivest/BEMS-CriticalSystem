@@ -501,7 +501,7 @@ async function setupHospitalPage() {
                 "Water Purifier": "Gambar-System/WaterPurifier.webp",
                 "Radiotherapy": "Gambar-System/Radiotherapy.webp",
                 "Brachytherapy": "Gambar-System/Brachytherapy.webp", 
-                //"Others": "Gambar-System/Others.webp", 
+                "Others": "Gambar-System/Others.webp", 
             };
 
 
