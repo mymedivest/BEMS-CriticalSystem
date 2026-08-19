@@ -522,11 +522,29 @@ async function setupHospitalPage() {
             });
           }
 
-           if (hospitalId === 'MKJ-JB') {
+          if (hospitalId === 'MKA-MLK') {
             // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['Medical Gas Pipeline System', 'BAS System']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+          
+          if (hospitalId === 'AGJ-ALOR-GAJAH') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+           if (hospitalId === 'JSN-JASIN') {
+            // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
