@@ -513,7 +513,52 @@ async function setupHospitalPage() {
           // Check if current hospital is JLB and filter out specific systems
           let systemsToShow = criticalSystems;
 
-          if (hospitalId === 'AGJ-ALOR-GAJAH') {
+          if (hospitalId === 'TUANKU-JAAFAR') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['PET Scanner', 'Mammo Unit', 'Angio System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'KPL-KUALA-PILAH') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'JMP-JEMPOL') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'JLB-JELEBU') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'PDX-PORT-DICKSON') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'TMP-TAMPIN') {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
@@ -549,16 +594,141 @@ async function setupHospitalPage() {
             });
           }
 
+        
+          if (hospitalId === 'HSA-JOHOR') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['Mammo Unit', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'HSI-JOHOR') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['PET Scanner', 'Angio System',  'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'HPSF-MUAR') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'KLN-KLUANG') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'BPH-BATU-PAHAT') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'PON-PONTIAN') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'SEG-SEGAMAT') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'HTSMTI-KULAI') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'KTG-KOTA-TINGGI') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'MER-MERSING') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
           if (hospitalId === 'TGK-TANGKAK') {
             // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['Air Handling Unit', 'Lift', 'Water Supply System', 'Chiller And Cooling Tower', 'BAS System']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
-          
-          
+ 
+          // if (hospitalId === 'MKJ-JB') {
+          //   // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+          //   systemsToShow = criticalSystems.filter(system => {
+          //     // List the system IDs to exclude for JLB hospital
+          //     const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+          //     return !excludedSystems.includes(system.id);
+          //   });
+          // }
+
+          if (hospitalId === 'PER-PERMAI') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Water Purifier', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'PGD-PASIR-GUDANG') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'PAN-Pantai') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          } 
 
             systemsToShow.forEach(system => {
                 const card = document.createElement('a');
