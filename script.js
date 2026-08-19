@@ -504,8 +504,45 @@ async function setupHospitalPage() {
                 "Others": "Gambar-System/Others.webp", 
             };
 
+          // From line 505 to 521, the script are added to the original scripts, while for line 523, the function is changed a bit. The reason is so that, for JLB, only 8 critical systems show up instead of 10
+          // Inside setupHospitalPage() function, in the section where system cards are generated
+          // Find this line: criticalSystems.forEach(system => {
 
-            criticalSystems.forEach(system => {
+          // Replace that entire loop with this conditional logic:
+
+          // Check if current hospital is JLB and filter out specific systems
+          let systemsToShow = criticalSystems;
+
+          if (hospitalId === 'AGJ-ALOR-GAJAH') {
+            // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+           if (hospitalId === 'MKJ-JB') {
+            // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['Medical Gas Pipeline System', 'BAS System']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+
+          if (hospitalId === 'TGK-TANGKAK') {
+            // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
+            systemsToShow = criticalSystems.filter(system => {
+              // List the system IDs to exclude for JLB hospital
+              const excludedSystems = ['Air Handling Unit', 'Lift', 'Water Supply System', 'Chiller And Cooling Tower', 'BAS System']; // IDs to remove
+              return !excludedSystems.includes(system.id);
+            });
+          }
+          
+          
+
+            systemsToShow.forEach(system => {
                 const card = document.createElement('a');
                 card.className = 'system-card'; 
                 card.href = `hospital-page.html?hosp=${hospitalId}&sys=${system.id}`;
