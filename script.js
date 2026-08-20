@@ -716,7 +716,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy']; // IDs to remove
+              const excludedSystems = ['PET Scanner', 'Angio System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
