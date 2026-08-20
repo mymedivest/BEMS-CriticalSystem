@@ -75,7 +75,7 @@ const hospitalData = [
 
     // --- JOHOR ---
     { name: "Hospital Sultanah Aminah, Johor Bahru", 
-        id: "HSA-JOHOR", sheetsUrl: "https://script.google.com/macros/s/AKfycbzwqsGcDaPKNKrdsmhuiP0nS2pGYuBB-97dRnuYqg4XBuYbIvq_-2FpqDcg1NOXcC_k/exec" },
+        id: "HSA-JOHOR", sheetsUrl: "https://script.google.com/macros/s/AKfycbyQ2f4xFajDR9XG4D7kAqfOL6IzToWQbu6mUgsbg1i2Mr5rHIZg0nMjewtgfneAAd2OFA/exec" },
     { name: "Hospital Sultan Ismail, Johor Bahru", 
         id: "HSI-JOHOR", sheetsUrl: "https://script.google.com/macros/s/AKfycbzSz536dHUFldW5uM09yuWdrlp-2wdN89GXVGvterROLKsNrH0Ccp89Ka59zhbhyaJ8og/exec" },
     { name: "Hospital Pakar Sultanah Fatimah, Muar", 
@@ -83,7 +83,7 @@ const hospitalData = [
     { name: "Hospital Kluang", 
         id: "KLN-KLUANG", sheetsUrl: "https://script.google.com/macros/s/AKfycbzcZs8X_V6Ed1GLdgJ9Kg78NiaYXBiDZMwm95g9Dddz8rkhyj8D-YptSAx4sO_T0319/exec" },
     { name: "Hospital Batu Pahat", 
-        id: "BPH-BATU-PAHAT", sheetsUrl: "https://script.google.com/macros/s/AKfycbyTvLZAO7cmxAiX-i6ZyjoChvl4bB0N0iyLeXK7n8gsCzQNzfedibIiEcQhLOl61Z2Ugg/exec" },
+        id: "BPH-BATU-PAHAT", sheetsUrl: "https://script.google.com/macros/s/AKfycbztCnzv3qj8_Tu64NvOvqfE-rqtk-nquJpnKA0sf53M-nkQ4yzzaqdWTbDZ3WcWrCLo/exec" },
     { name: "Hospital Pontian", 
         id: "PON-PONTIAN", sheetsUrl: "https://script.google.com/macros/s/AKfycbyTPjnBYxZ2asURDlZUplLz2g-zD1ddsFNKoOkBmicKaY0COS_ODdo3OHzTkUuRG60V/exec" },
     { name: "Hospital Segamat", 
