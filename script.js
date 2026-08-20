@@ -493,11 +493,11 @@ async function setupHospitalPage() {
             // --- PETA LALUAN GAMBAR (MAP) ---
             const systemImageMap = {
                 "MRI Scanner": "Gambar-System/MRI.webp", 
-                "CT Scanner": "Gambar-System/CT.webp",
-                "PET Scanner": "Gambar-System/PET.webp",
+                "CT Scanner": "Gambar-System/CT-1.webp",
+                "PET Scanner": "Gambar-System/PET-2.webp",
                 "Mammo Unit": "Gambar-System/Mammo.webp",
-                "Angio System": "Gambar-System/Angio.webp",
-                "X-Ray System": "Gambar-System/Xray.webp",
+                "Angio System": "Gambar-System/Angio-1.webp",
+                "X-Ray System": "Gambar-System/X-Ray-1.webp",
                 "Water Purifier": "Gambar-System/WaterPurifier.webp",
                 "Radiotherapy": "Gambar-System/Radiotherapy.webp",
                 "Brachytherapy": "Gambar-System/Brachytherapy.webp", 
