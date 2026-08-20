@@ -379,6 +379,17 @@ const submissionForms = {
     'PER-PERMAI_Water Purifier': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_Angio System': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_Radiotherapy': 'https://mymedivest.github.io/BEMS-Form/PER.html',
+
+    'PGD-PASIR-GUDANG_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Others': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Water Purifier': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Angio System': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Radiotherapy': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
 };
 
 // Fungsi untuk mengemas kini kad hospital sedia ada di halaman utama
