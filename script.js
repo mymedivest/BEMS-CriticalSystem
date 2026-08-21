@@ -126,7 +126,7 @@ const criticalSystems = [
     { name: "PET Scanner", id: "PET Scanner"},
     { name: "Mammo Unit", id: "Mammo Unit"},
     { name: "Angio System", id: "Angio System"},
-    { name: "X-Ray System", id: "X-Ray System"},
+    { name: "Fluoro MP", id: "Fluoro MP"},
     { name: "Water Purifier", id: "Water Purifier"},
     { name: "Radiotherapy", id: "Radiotherapy"},
     { name: "Brachytherapy", id: "Brachytherapy" },
@@ -139,7 +139,7 @@ const submissionForms = {
     'TUANKU-JAAFAR_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
     'TUANKU-JAAFAR_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
     'TUANKU-JAAFAR_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
-    'TUANKU-JAAFAR_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
+    'TUANKU-JAAFAR_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
     'TUANKU-JAAFAR_Others': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
     'TUANKU-JAAFAR_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
     'TUANKU-JAAFAR_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/HTJ.html',
@@ -150,7 +150,7 @@ const submissionForms = {
     'JMP-JEMPOL_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
     'JMP-JEMPOL_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
     'JMP-JEMPOL_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
-    'JMP-JEMPOL_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
+    'JMP-JEMPOL_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
     'JMP-JEMPOL_Others': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
     'JMP-JEMPOL_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
     'JMP-JEMPOL_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/JMP.html',
@@ -161,7 +161,7 @@ const submissionForms = {
     'TMP-TAMPIN_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
     'TMP-TAMPIN_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
     'TMP-TAMPIN_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
-    'TMP-TAMPIN_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
+    'TMP-TAMPIN_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
     'TMP-TAMPIN_Others': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
     'TMP-TAMPIN_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
     'TMP-TAMPIN_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/TMP.html',
@@ -172,7 +172,7 @@ const submissionForms = {
     'PDX-PORT-DICKSON_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
     'PDX-PORT-DICKSON_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
     'PDX-PORT-DICKSON_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
-    'PDX-PORT-DICKSON_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
+    'PDX-PORT-DICKSON_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
     'PDX-PORT-DICKSON_Others': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
     'PDX-PORT-DICKSON_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
     'PDX-PORT-DICKSON_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/PDX.html',
@@ -183,7 +183,7 @@ const submissionForms = {
     'JLB-JELEBU_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
     'JLB-JELEBU_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
     'JLB-JELEBU_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
-    'JLB-JELEBU_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
+    'JLB-JELEBU_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
     'JLB-JELEBU_Others': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
     'JLB-JELEBU_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
     'JLB-JELEBU_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/JLB.html',
@@ -194,7 +194,7 @@ const submissionForms = {
     'KPL-KUALA-PILAH_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
     'KPL-KUALA-PILAH_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
     'KPL-KUALA-PILAH_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
-    'KPL-KUALA-PILAH_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
+    'KPL-KUALA-PILAH_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
     'KPL-KUALA-PILAH_Others': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
     'KPL-KUALA-PILAH_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
     'KPL-KUALA-PILAH_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/KPL.html',
@@ -206,7 +206,7 @@ const submissionForms = {
     'MKA-MLK_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
     'MKA-MLK_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
     'MKA-MLK_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
-    'MKA-MLK_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
+    'MKA-MLK_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
     'MKA-MLK_Others': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
     'MKA-MLK_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
     'MKA-MLK_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/MKA.html',
@@ -217,7 +217,7 @@ const submissionForms = {
     'AGJ-ALOR-GAJAH_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
     'AGJ-ALOR-GAJAH_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
     'AGJ-ALOR-GAJAH_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
-    'AGJ-ALOR-GAJAH_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
+    'AGJ-ALOR-GAJAH_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
     'AGJ-ALOR-GAJAH_Others': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
     'AGJ-ALOR-GAJAH_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
     'AGJ-ALOR-GAJAH_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/AGJ.html',
@@ -228,7 +228,7 @@ const submissionForms = {
     'JSN-JASIN_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
     'JSN-JASIN_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
     'JSN-JASIN_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
-    'JSN-JASIN_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
+    'JSN-JASIN_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
     'JSN-JASIN_Others': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
     'JSN-JASIN_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
     'JSN-JASIN_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/JSN.html',
@@ -240,7 +240,7 @@ const submissionForms = {
     'HSA-JOHOR_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
     'HSA-JOHOR_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
     'HSA-JOHOR_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
-    'HSA-JOHOR_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
+    'HSA-JOHOR_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
     'HSA-JOHOR_Others': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
     'HSA-JOHOR_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
     'HSA-JOHOR_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/HSA.html',
@@ -251,7 +251,7 @@ const submissionForms = {
     'HSI-JOHOR_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
     'HSI-JOHOR_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
     'HSI-JOHOR_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
-    'HSI-JOHOR_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
+    'HSI-JOHOR_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
     'HSI-JOHOR_Others': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
     'HSI-JOHOR_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
     'HSI-JOHOR_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/HSI.html',
@@ -262,7 +262,7 @@ const submissionForms = {
     'HPSF-MUAR_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
     'HPSF-MUAR_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
     'HPSF-MUAR_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
-    'HPSF-MUAR_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
+    'HPSF-MUAR_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
     'HPSF-MUAR_Others': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
     'HPSF-MUAR_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
     'HPSF-MUAR_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/MUR.html',
@@ -273,7 +273,7 @@ const submissionForms = {
     'KLN-KLUANG_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
     'KLN-KLUANG_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
     'KLN-KLUANG_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
-    'KLN-KLUANG_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
+    'KLN-KLUANG_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
     'KLN-KLUANG_Others': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
     'KLN-KLUANG_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
     'KLN-KLUANG_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/KLN.html',
@@ -284,7 +284,7 @@ const submissionForms = {
     'BPH-BATU-PAHAT_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
     'BPH-BATU-PAHAT_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
     'BPH-BATU-PAHAT_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
-    'BPH-BATU-PAHAT_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
+    'BPH-BATU-PAHAT_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
     'BPH-BATU-PAHAT_Others': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
     'BPH-BATU-PAHAT_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
     'BPH-BATU-PAHAT_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/BPH.html',
@@ -295,7 +295,7 @@ const submissionForms = {
     'PON-PONTIAN_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/PON.html',
     'PON-PONTIAN_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/PON.html',
     'PON-PONTIAN_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/PON.html',
-    'PON-PONTIAN_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/PON.html',
+    'PON-PONTIAN_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/PON.html',
     'PON-PONTIAN_Others': 'https://mymedivest.github.io/BEMS-Form/PON.html',
     'PON-PONTIAN_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/PON.html',
     'PON-PONTIAN_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/PON.html',
@@ -306,7 +306,7 @@ const submissionForms = {
     'SEG-SEGAMAT_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
     'SEG-SEGAMAT_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
     'SEG-SEGAMAT_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
-    'SEG-SEGAMAT_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
+    'SEG-SEGAMAT_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
     'SEG-SEGAMAT_Others': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
     'SEG-SEGAMAT_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
     'SEG-SEGAMAT_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/SGT.html',
@@ -317,7 +317,7 @@ const submissionForms = {
     'HTSMTI-KULAI_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
     'HTSMTI-KULAI_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
     'HTSMTI-KULAI_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
-    'HTSMTI-KULAI_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
+    'HTSMTI-KULAI_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
     'HTSMTI-KULAI_Others': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
     'HTSMTI-KULAI_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
     'HTSMTI-KULAI_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/KUL.html',
@@ -328,7 +328,7 @@ const submissionForms = {
     'KTG-KOTA-TINGGI_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
     'KTG-KOTA-TINGGI_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
     'KTG-KOTA-TINGGI_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
-    'KTG-KOTA-TINGGI_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
+    'KTG-KOTA-TINGGI_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
     'KTG-KOTA-TINGGI_Others': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
     'KTG-KOTA-TINGGI_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
     'KTG-KOTA-TINGGI_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/KTG.html',
@@ -339,7 +339,7 @@ const submissionForms = {
     'MER-MERSING_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/MER.html',
     'MER-MERSING_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/MER.html',
     'MER-MERSING_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/MER.html',
-    'MER-MERSING_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/MER.html',
+    'MER-MERSING_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/MER.html',
     'MER-MERSING_Others': 'https://mymedivest.github.io/BEMS-Form/MER.html',
     'MER-MERSING_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/MER.html',
     'MER-MERSING_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/MER.html',
@@ -350,7 +350,7 @@ const submissionForms = {
     'TGK-TANGKAK_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
     'TGK-TANGKAK_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
     'TGK-TANGKAK_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
-    'TGK-TANGKAK_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
+    'TGK-TANGKAK_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
     'TGK-TANGKAK_Others': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
     'TGK-TANGKAK_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
     'TGK-TANGKAK_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/TGK.html',
@@ -361,7 +361,7 @@ const submissionForms = {
     'MKJ-JB_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
     'MKJ-JB_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
     'MKJ-JB_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
-    'MKJ-JB_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
+    'MKJ-JB_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
     'MKJ-JB_Others': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
     'MKJ-JB_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
     'MKJ-JB_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/MKJ.html',
@@ -372,7 +372,7 @@ const submissionForms = {
     'PER-PERMAI_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/PER.html',
-    'PER-PERMAI_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/PER.html',
+    'PER-PERMAI_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_Others': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/PER.html',
     'PER-PERMAI_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/PER.html',
@@ -383,7 +383,7 @@ const submissionForms = {
     'PGD-PASIR-GUDANG_MRI Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
     'PGD-PASIR-GUDANG_CT Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
     'PGD-PASIR-GUDANG_Mammo Unit': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
-    'PGD-PASIR-GUDANG_X-Ray System': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
+    'PGD-PASIR-GUDANG_Fluoro MP': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
     'PGD-PASIR-GUDANG_Others': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
     'PGD-PASIR-GUDANG_Brachytherapy': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
     'PGD-PASIR-GUDANG_PET Scanner': 'https://mymedivest.github.io/BEMS-Form/PGD.html',
@@ -508,7 +508,7 @@ async function setupHospitalPage() {
                 "PET Scanner": "Gambar-System/PET-2.webp",
                 "Mammo Unit": "Gambar-System/Mammo.webp",
                 "Angio System": "Gambar-System/Angio-1.webp",
-                "X-Ray System": "Gambar-System/X-Ray-1.webp",
+                "Fluoro MP": "Gambar-System/X-Ray-1.webp",
                 "Water Purifier": "Gambar-System/WaterPurifier.webp",
                 "Radiotherapy": "Gambar-System/Radiotherapy.webp",
                 "Brachytherapy": "Gambar-System/Brachytherapy.webp", 
@@ -537,7 +537,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -546,7 +546,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -555,7 +555,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -564,7 +564,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -573,7 +573,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -591,7 +591,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -600,7 +600,7 @@ async function setupHospitalPage() {
             // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -628,7 +628,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['PET Scanner', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -655,7 +655,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -664,7 +664,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -673,7 +673,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -682,7 +682,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -691,7 +691,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -700,7 +700,7 @@ async function setupHospitalPage() {
             // Remove Medical Gas Pipeline System and BAS System (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -718,7 +718,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Water Purifier', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Water Purifier', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           }
@@ -736,7 +736,7 @@ async function setupHospitalPage() {
             // Remove LIFT and AIR HANDLING UNIT (and any others you don't want)
             systemsToShow = criticalSystems.filter(system => {
               // List the system IDs to exclude for JLB hospital
-              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'X-Ray System', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
+              const excludedSystems = ['MRI Scanner', 'CT Scanner', 'PET Scanner', 'Mammo Unit', 'Angio System', 'Fluoro MP', 'Radiotherapy', 'Brachytherapy', 'Others']; // IDs to remove
               return !excludedSystems.includes(system.id);
             });
           } 
